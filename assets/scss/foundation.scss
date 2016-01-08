@@ -31,28 +31,28 @@
 @include foundation-forms;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
-@include foundation-accordion;
-@include foundation-accordion-menu;
+//@include foundation-accordion;
+//@include foundation-accordion-menu;
 @include foundation-badge;
-@include foundation-breadcrumbs;
+//@include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
 @include foundation-close-button;
-@include foundation-drilldown-menu;
-@include foundation-dropdown;
+//@include foundation-drilldown-menu;
+//@include foundation-dropdown;
 @include foundation-dropdown-menu;
 @include foundation-flex-video;
 @include foundation-label;
 @include foundation-media-object;
 @include foundation-menu;
 @include foundation-off-canvas;
-@include foundation-orbit;
+//@include foundation-orbit;
 @include foundation-pagination;
-@include foundation-progress-bar;
-@include foundation-slider;
-@include foundation-sticky;
-@include foundation-reveal;
-@include foundation-switch;
+//@include foundation-progress-bar;
+//@include foundation-slider;
+//@include foundation-sticky;
+//@include foundation-reveal;
+//@include foundation-switch;
 @include foundation-table;
 @include foundation-tabs;
 @include foundation-thumbnail;
@@ -61,8 +61,8 @@
 @include foundation-top-bar;
 
 // Motion UI
-@include motion-ui-transitions;
-@include motion-ui-animations;
+//@include motion-ui-transitions;
+//@include motion-ui-animations;
 
 /*
   My custom styles:
@@ -82,8 +82,11 @@
 
 // Templates
 @import "templates/front";
-@import "templates/kitchen-sink";
+//@import "templates/kitchen-sink";
 @import "templates/page-default";
 @import "templates/page-sidebar-left";
 @import "templates/page-full-width";
 @import "templates/single-post";
+
+//Specific to this site
+@import "lucyblunden/typography";
