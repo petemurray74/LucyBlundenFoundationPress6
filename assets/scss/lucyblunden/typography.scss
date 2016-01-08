@@ -1,0 +1,29 @@
+//Using this as a global font setting as $global-font-size messes up layout
+p,li {
+font-size:rem-calc(21);
+}
+	
+h1{
+    line-height: 1.1;
+}
+
+h2 {
+    line-height: 1.2;
+}
+
+h1,h2 {
+    letter-spacing: -0.05em;
+    font-weight: 400;
+}
+
+h3,h4 {
+    letter-spacing: -0.03em;
+}
+
+h5,h6 {
+    letter-spacing: -0.01em;
+}
+
+h6{
+    text-transform: uppercase;
+}
