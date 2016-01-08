@@ -1,8 +1,8 @@
 .DS_Store
 *.sass-cache*
 *.log
+*.map
 node_modules/
-assets/stylesheets/
 assets/components/
 assets/javascript/vendor/
 assets/javascript/foundation.js
