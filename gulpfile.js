@@ -30,7 +30,7 @@ var PATHS = {
   javascript: [
     'assets/components/what-input/what-input.js',
     'assets/components/foundation-sites/js/foundation.core.js',
-    //'assets/components/foundation-sites/js/foundation.util.*.js',
+    'assets/components/foundation-sites/js/foundation.util.*.js',
 
     // Paths to individual JS components defined below
     //'assets/components/foundation-sites/js/foundation.abide.js',
