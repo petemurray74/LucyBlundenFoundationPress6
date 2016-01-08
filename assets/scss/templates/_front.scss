@@ -2,11 +2,11 @@
 #front-hero {
 	.marketing {
 		@include grid-row();
-		max-width: 55rem;
+		//max-width: 55rem;
 	}
 
 	@include breakpoint(small) {
-		background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
+		background: #ccc url('../../../../uploads/site-template/hero-image.jpg') bottom center;
 		background-size: cover;
 		background-position: bottom;
 		padding: rem-calc(65%) 0;
@@ -17,10 +17,10 @@
 	}
 
 	@include breakpoint(medium) {
-		background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
+		background: #ccc url('../../../../uploads/site-template/hero-image.jpg') bottom center;
 		background-size: cover;
 		background-position: center;
-		height: rem-calc(685);
+		height: rem-calc(350);
 		margin: 0 0 rem-calc(72);
 	}
 
@@ -110,7 +110,6 @@
 		font-size: 1.3125rem;
 	}
 
-	.download { margin-top: rem-calc(20); }
 
 }
 
@@ -126,7 +125,7 @@
 
 		@include breakpoint(medium) {
 			@include grid-column(10);
-			@include grid-column-offset(1);
+			//@include grid-column-offset(1);
 
 			h2 {
 				font-weight: 300;
@@ -156,56 +155,3 @@
 }
 
 
-// Benefits
-.benefits {
-	@include grid-row();
-	text-align: center;
-
-	header {
-		@include grid-column(12);
-
-		h2 {
-			font-weight: 300;
-		}
-
-		h4 {
-			font-size: 1.125rem;
-			line-height: 1.6;
-			color: #777;
-		}
-	}
-
-	.semantic,
-	.responsive,
-	.customizable,
-	.professional {
-		@include breakpoint(small) {
-			@include grid-column(12);
-		}
-
-		@include breakpoint(medium) {
-			@include grid-column(3);
-		}
-
-		img {
-			padding: 1.25rem;
-    	margin: 1rem auto 0 auto;
-		}
-
-		h3 {
-			color: #0a0a0a;
-			font-weight: 300;
-			font-size: 1.75rem;
-		}
-
-		p { font-size: 0.9375rem; }
-
-	}
-
-	.why-foundation {
-		@include grid-row();
-		@include grid-column(12);
-		margin-top: 4rem;
-	}
-
-}

@@ -4825,7 +4825,7 @@ table.hover tr:nth-of-type(even):hover {
   color: #B9B9B9; }
 
 #front-hero {
-  background: url("../images/demo/hero-bg-foundation-6-small.svg") bottom center;
+  background: #ccc url("../../../../uploads/site-template/hero-image.jpg") bottom center;
   background-size: cover;
   background-position: bottom;
   padding: 4.0625rem 0;
@@ -4836,8 +4836,7 @@ table.hover tr:nth-of-type(even):hover {
   #front-hero .marketing {
     max-width: 62.5rem;
     margin-left: auto;
-    margin-right: auto;
-    max-width: 55rem; }
+    margin-right: auto; }
     #front-hero .marketing::before, #front-hero .marketing::after {
       content: ' ';
       display: table; }
@@ -4845,10 +4844,10 @@ table.hover tr:nth-of-type(even):hover {
       clear: both; }
   @media screen and (min-width: 40em) {
     #front-hero {
-      background: url("../images/demo/hero-bg-foundation-6-large.svg") bottom center;
+      background: #ccc url("../../../../uploads/site-template/hero-image.jpg") bottom center;
       background-size: cover;
       background-position: center;
-      height: 42.8125rem;
+      height: 21.875rem;
       margin: 0 0 4.5rem; } }
   #front-hero #watch {
     padding-left: 0.625rem;
@@ -4939,8 +4938,6 @@ table.hover tr:nth-of-type(even):hover {
     color: #fefefe;
     font-weight: 300;
     font-size: 1.3125rem; }
-  #front-hero .download {
-    margin-top: 1.25rem; }
 
 .intro {
   max-width: 62.5rem;
@@ -4967,8 +4964,7 @@ table.hover tr:nth-of-type(even):hover {
         padding-left: 0.625rem;
         padding-right: 0.625rem;
         width: 83.33333%;
-        float: left;
-        margin-left: 8.33333%; } }
+        float: left; } }
   @media screen and (min-width: 40em) and (min-width: 40em) {
     .intro .fp-intro {
       padding-left: 0.9375rem;
@@ -5005,114 +5001,6 @@ table.hover tr:nth-of-type(even):hover {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem; } }
     .section-divider hr:last-child:not(:first-child) {
-      float: right; }
-
-.benefits {
-  max-width: 62.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
-  .benefits::before, .benefits::after {
-    content: ' ';
-    display: table; }
-  .benefits::after {
-    clear: both; }
-  .benefits header {
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    width: 100%;
-    float: left; }
-    @media screen and (min-width: 40em) {
-      .benefits header {
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem; } }
-    .benefits header:last-child:not(:first-child) {
-      float: right; }
-    .benefits header h2 {
-      font-weight: 300; }
-    .benefits header h4 {
-      font-size: 1.125rem;
-      line-height: 1.6;
-      color: #777; }
-  .benefits .semantic,
-  .benefits .responsive,
-  .benefits .customizable,
-  .benefits .professional {
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    width: 100%;
-    float: left; }
-    @media screen and (min-width: 40em) {
-      .benefits .semantic,
-      .benefits .responsive,
-      .benefits .customizable,
-      .benefits .professional {
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem; } }
-    .benefits .semantic:last-child:not(:first-child),
-    .benefits .responsive:last-child:not(:first-child),
-    .benefits .customizable:last-child:not(:first-child),
-    .benefits .professional:last-child:not(:first-child) {
-      float: right; }
-    @media screen and (min-width: 40em) {
-      .benefits .semantic,
-      .benefits .responsive,
-      .benefits .customizable,
-      .benefits .professional {
-        padding-left: 0.625rem;
-        padding-right: 0.625rem;
-        width: 25%;
-        float: left; } }
-  @media screen and (min-width: 40em) and (min-width: 40em) {
-    .benefits .semantic,
-    .benefits .responsive,
-    .benefits .customizable,
-    .benefits .professional {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem; } }
-    @media screen and (min-width: 40em) {
-        .benefits .semantic:last-child:not(:first-child),
-        .benefits .responsive:last-child:not(:first-child),
-        .benefits .customizable:last-child:not(:first-child),
-        .benefits .professional:last-child:not(:first-child) {
-          float: right; } }
-    .benefits .semantic img,
-    .benefits .responsive img,
-    .benefits .customizable img,
-    .benefits .professional img {
-      padding: 1.25rem;
-      margin: 1rem auto 0 auto; }
-    .benefits .semantic h3,
-    .benefits .responsive h3,
-    .benefits .customizable h3,
-    .benefits .professional h3 {
-      color: #0a0a0a;
-      font-weight: 300;
-      font-size: 1.75rem; }
-    .benefits .semantic p,
-    .benefits .responsive p,
-    .benefits .customizable p,
-    .benefits .professional p {
-      font-size: 0.9375rem; }
-  .benefits .why-foundation {
-    max-width: 62.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    width: 100%;
-    float: left;
-    margin-top: 4rem; }
-    .benefits .why-foundation::before, .benefits .why-foundation::after {
-      content: ' ';
-      display: table; }
-    .benefits .why-foundation::after {
-      clear: both; }
-    @media screen and (min-width: 40em) {
-      .benefits .why-foundation {
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem; } }
-    .benefits .why-foundation:last-child:not(:first-child) {
       float: right; }
 
 #page {
