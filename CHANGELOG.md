@@ -1,5 +1,145 @@
 # Change Log
 
+## [v2.6.1](https://github.com/olefredrik/FoundationPress/tree/v2.6.1) (2016-03-10)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.6.0...v2.6.1)
+
+**Fixed bugs:**
+
+- Responsive images WP 4.4 [\#607](https://github.com/olefredrik/FoundationPress/issues/607)
+- Stripping Image Classes [\#532](https://github.com/olefredrik/FoundationPress/issues/532)
+
+**Closed issues:**
+
+- Essential Grid Plugin on Mobile [\#578](https://github.com/olefredrik/FoundationPress/issues/578)
+- Mobile Menu doesn't load [\#485](https://github.com/olefredrik/FoundationPress/issues/485)
+
+**Merged pull requests:**
+
+- Remove local server url from gulpfile [\#764](https://github.com/olefredrik/FoundationPress/pull/764) ([olefredrik](https://github.com/olefredrik))
+
+## [v2.6.0](https://github.com/olefredrik/FoundationPress/tree/v2.6.0) (2016-03-10)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.5.1...v2.6.0)
+
+**Implemented enhancements:**
+
+- Responsive images [\#657](https://github.com/olefredrik/FoundationPress/pull/657) ([olefredrik](https://github.com/olefredrik))
+
+**Closed issues:**
+
+- bower components \_global overriding scss/global/\_setting [\#762](https://github.com/olefredrik/FoundationPress/issues/762)
+- Fresh install changes to \_settings.scss not cascading consistently [\#760](https://github.com/olefredrik/FoundationPress/issues/760)
+- foundation.css file throw an 404 error on childthemes [\#758](https://github.com/olefredrik/FoundationPress/issues/758)
+- Homepage replicate across all pages [\#755](https://github.com/olefredrik/FoundationPress/issues/755)
+- Error messages always displayed when using Abide validation [\#719](https://github.com/olefredrik/FoundationPress/issues/719)
+
+**Merged pull requests:**
+
+- Bug fix settings file [\#763](https://github.com/olefredrik/FoundationPress/pull/763) ([EricRihlmann](https://github.com/EricRihlmann))
+- Add the new foundation color palette mixin [\#761](https://github.com/olefredrik/FoundationPress/pull/761) ([olefredrik](https://github.com/olefredrik))
+
+## [v2.5.1](https://github.com/olefredrik/FoundationPress/tree/v2.5.1) (2016-03-08)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.5.0...v2.5.1)
+
+**Fixed bugs:**
+
+- Dropdown Menu Arrows [\#752](https://github.com/olefredrik/FoundationPress/issues/752)
+
+**Closed issues:**
+
+- FoundationPress Grid [\#751](https://github.com/olefredrik/FoundationPress/issues/751)
+- Git Ignores Files Inside FoundationPress Theme Folder. [\#750](https://github.com/olefredrik/FoundationPress/issues/750)
+- gulp file errors, FP 2.5, npm run watch, Windows 7 x64 [\#748](https://github.com/olefredrik/FoundationPress/issues/748)
+- Npm installation stop working... [\#744](https://github.com/olefredrik/FoundationPress/issues/744)
+- Flexbox grid? [\#741](https://github.com/olefredrik/FoundationPress/issues/741)
+- Incorrect GCC [\#739](https://github.com/olefredrik/FoundationPress/issues/739)
+- Can't add or style elements of main content [\#736](https://github.com/olefredrik/FoundationPress/issues/736)
+- adding the UNCSS task in my gulpfile.js [\#727](https://github.com/olefredrik/FoundationPress/issues/727)
+- Offcanvas menu not working [\#720](https://github.com/olefredrik/FoundationPress/issues/720)
+- jquery.js conflict with popular wordpress plugins [\#645](https://github.com/olefredrik/FoundationPress/issues/645)
+
+**Merged pull requests:**
+
+- Feature/child theme support [\#759](https://github.com/olefredrik/FoundationPress/pull/759) ([olefredrik](https://github.com/olefredrik))
+- fix sidebar search to use input-group [\#757](https://github.com/olefredrik/FoundationPress/pull/757) ([ryanfrawley](https://github.com/ryanfrawley))
+- Fix dropdown menu arrows [\#754](https://github.com/olefredrik/FoundationPress/pull/754) ([olefredrik](https://github.com/olefredrik))
+- Change off-canvas menu height to affect all menus [\#747](https://github.com/olefredrik/FoundationPress/pull/747) ([bej-soan](https://github.com/bej-soan))
+- Separate javascript files with semi-colon when concatenating [\#746](https://github.com/olefredrik/FoundationPress/pull/746) ([jontro](https://github.com/jontro))
+- Remove duplicate line from foundation.scss [\#743](https://github.com/olefredrik/FoundationPress/pull/743) ([fourhexagons](https://github.com/fourhexagons))
+
+## [v2.5.0](https://github.com/olefredrik/FoundationPress/tree/v2.5.0) (2016-03-02)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.4.0...v2.5.0)
+
+**Closed issues:**
+
+- Block Grid Not Working [\#738](https://github.com/olefredrik/FoundationPress/issues/738)
+- Clean Install Problem [\#737](https://github.com/olefredrik/FoundationPress/issues/737)
+- npm WARN package.json foundationpress@5.5.1 No license field. [\#734](https://github.com/olefredrik/FoundationPress/issues/734)
+- WP Search, show excerpts in search [\#732](https://github.com/olefredrik/FoundationPress/issues/732)
+- anyone know what causes error:file to import not found or unreadable  [\#731](https://github.com/olefredrik/FoundationPress/issues/731)
+- Adding logo in center of Nav Bar [\#730](https://github.com/olefredrik/FoundationPress/issues/730)
+- Using foundation columns in Wordpress visual editor? [\#725](https://github.com/olefredrik/FoundationPress/issues/725)
+-  libsass binding was not found - error [\#724](https://github.com/olefredrik/FoundationPress/issues/724)
+- SASS/node error working with "old" FP 1.x projects alongside FP 2.x [\#722](https://github.com/olefredrik/FoundationPress/issues/722)
+- how to style wordpress footer widgets [\#706](https://github.com/olefredrik/FoundationPress/issues/706)
+- Top bar menu wonky with FP2.x [\#704](https://github.com/olefredrik/FoundationPress/issues/704)
+
+**Merged pull requests:**
+
+- Tethys Update \(Foundation 6.2\) [\#742](https://github.com/olefredrik/FoundationPress/pull/742) ([olefredrik](https://github.com/olefredrik))
+- Sticky posts bugfix [\#733](https://github.com/olefredrik/FoundationPress/pull/733) ([colin-marshall](https://github.com/colin-marshall))
+
+## [v2.4.0](https://github.com/olefredrik/FoundationPress/tree/v2.4.0) (2016-02-11)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.3.0...v2.4.0)
+
+**Fixed bugs:**
+
+- Duplicate jQuery  [\#669](https://github.com/olefredrik/FoundationPress/issues/669)
+- Menu not appearing for off-canvas on non mobile sizes [\#650](https://github.com/olefredrik/FoundationPress/issues/650)
+- Second-level submenus don't fly out [\#634](https://github.com/olefredrik/FoundationPress/issues/634)
+
+**Closed issues:**
+
+- Blog Title position in Top Bar [\#721](https://github.com/olefredrik/FoundationPress/issues/721)
+- New menu [\#716](https://github.com/olefredrik/FoundationPress/issues/716)
+- Reveal Modal [\#712](https://github.com/olefredrik/FoundationPress/issues/712)
+- This is not full version of FoundationPress, when I installed it then I don't see any style from foundation.css. Where is css and scss folder and other... [\#711](https://github.com/olefredrik/FoundationPress/issues/711)
+- Off canvas mobile menu issue [\#709](https://github.com/olefredrik/FoundationPress/issues/709)
+- Misc changes to consider [\#708](https://github.com/olefredrik/FoundationPress/issues/708)
+- Top Bar CSS differs on newly installed FoundationPress.... [\#705](https://github.com/olefredrik/FoundationPress/issues/705)
+- npm run package do not minify js [\#695](https://github.com/olefredrik/FoundationPress/issues/695)
+- Where have all the Sass variables gone in Foundation 6? [\#693](https://github.com/olefredrik/FoundationPress/issues/693)
+- Using FoundationPress in production on EC2 [\#692](https://github.com/olefredrik/FoundationPress/issues/692)
+- foundationPress install error [\#691](https://github.com/olefredrik/FoundationPress/issues/691)
+- Run Watch/Build Issues [\#690](https://github.com/olefredrik/FoundationPress/issues/690)
+- sorry for the dumb question, but how do you update [\#689](https://github.com/olefredrik/FoundationPress/issues/689)
+- media breakpoints [\#688](https://github.com/olefredrik/FoundationPress/issues/688)
+- Missing semicolon in SCSS produces a segmentation fault. [\#686](https://github.com/olefredrik/FoundationPress/issues/686)
+- library/navigation.php [\#685](https://github.com/olefredrik/FoundationPress/issues/685)
+- Can't find topbar breakpoint in settings.scss [\#684](https://github.com/olefredrik/FoundationPress/issues/684)
+- Old project with grunt: not able to make some change [\#683](https://github.com/olefredrik/FoundationPress/issues/683)
+- gulpfile javascript build [\#680](https://github.com/olefredrik/FoundationPress/issues/680)
+- SASS COMPILING ERROR [\#679](https://github.com/olefredrik/FoundationPress/issues/679)
+- Plans for using SASS? [\#678](https://github.com/olefredrik/FoundationPress/issues/678)
+- Default Topbar [\#677](https://github.com/olefredrik/FoundationPress/issues/677)
+- Mobile Menu not working correctly. [\#675](https://github.com/olefredrik/FoundationPress/issues/675)
+- off-canvas positioning [\#671](https://github.com/olefredrik/FoundationPress/issues/671)
+- SCSS Documentation [\#652](https://github.com/olefredrik/FoundationPress/issues/652)
+- woocommerce template overrides not working [\#651](https://github.com/olefredrik/FoundationPress/issues/651)
+- Mobile Menu Customizer [\#494](https://github.com/olefredrik/FoundationPress/issues/494)
+
+**Merged pull requests:**
+
+- Remove caret for first-level menu [\#723](https://github.com/olefredrik/FoundationPress/pull/723) ([olefredrik](https://github.com/olefredrik))
+- Adagio improvements [\#717](https://github.com/olefredrik/FoundationPress/pull/717) ([colin-marshall](https://github.com/colin-marshall))
+- Fix topbar issues [\#714](https://github.com/olefredrik/FoundationPress/pull/714) ([olefredrik](https://github.com/olefredrik))
+- Add reveal to the kitchen-sink template [\#713](https://github.com/olefredrik/FoundationPress/pull/713) ([olefredrik](https://github.com/olefredrik))
+- Wrong file name [\#707](https://github.com/olefredrik/FoundationPress/pull/707) ([sylvhama](https://github.com/sylvhama))
+- Navigation [\#699](https://github.com/olefredrik/FoundationPress/pull/699) ([olefredrik](https://github.com/olefredrik))
+- Move nav visibility classes from php to scss [\#698](https://github.com/olefredrik/FoundationPress/pull/698) ([olefredrik](https://github.com/olefredrik))
+- npm run package now minifies css & js [\#697](https://github.com/olefredrik/FoundationPress/pull/697) ([colin-marshall](https://github.com/colin-marshall))
+- Added gulp clean tasks [\#681](https://github.com/olefredrik/FoundationPress/pull/681) ([colin-marshall](https://github.com/colin-marshall))
+- Remove this as we use CDN hosted jQuery [\#670](https://github.com/olefredrik/FoundationPress/pull/670) ([olefredrik](https://github.com/olefredrik))
+
 ## [v2.3.0](https://github.com/olefredrik/FoundationPress/tree/v2.3.0) (2015-12-31)
 [Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.2.0...v2.3.0)
 

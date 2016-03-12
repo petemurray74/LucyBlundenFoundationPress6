@@ -9,6 +9,7 @@ var merge       = require('merge-stream');
 var sequence    = require('run-sequence');
 var colors      = require('colors');
 var dateFormat  = require('dateformat');
+var del         = require('del');
 
 // Enter URL of your local server here
 // Example: 'http://localwebsite.dev'
@@ -25,7 +26,7 @@ var PATHS = {
   sass: [
     'assets/components/foundation-sites/scss',
     'assets/components/motion-ui/src',
-    'assets/components/fontawesome/scss'
+    'assets/components/fontawesome/scss',
   ],
   javascript: [
     'assets/components/what-input/what-input.js',
@@ -57,7 +58,12 @@ var PATHS = {
     //'assets/components/motion-ui/motion-ui.js',
 
     // Include your own custom scripts (located in the custom folder)
-    'assets/javascript/custom/*.js'
+    'assets/javascript/custom/*.js',
+  ],
+  phpcs: [
+    '**/*.php',
+    '!wpcs',
+    '!wpcs/**',
   ],
   pkg: [
     '**/*',
@@ -65,12 +71,12 @@ var PATHS = {
     '!**/components/**',
     '!**/scss/**',
     '!**/bower.json',
-    '!**/Gruntfile.js',
+    '!**/gulpfile.js',
     '!**/package.json',
     '!**/composer.json',
     '!**/composer.lock',
     '!**/codesniffer.ruleset.xml',
-    '!**/packaged/*'
+    '!**/packaged/*',
   ]
 };
 
@@ -79,7 +85,7 @@ gulp.task('browser-sync', ['build'], function() {
 
   var files = [
             '**/*.php',
-            'assets/images/**/*.{png,jpg,gif}'
+            'assets/images/**/*.{png,jpg,gif}',
           ];
 
   browserSync.init(files, {
@@ -144,7 +150,10 @@ gulp.task('javascript', function() {
 
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
-    .pipe($.concat('foundation.js'))
+    .pipe($.babel())
+    .pipe($.concat('foundation.js', {
+      newLine:'\n;'
+    }))
     .pipe($.if(isProduction, uglify))
     .pipe($.if(!isProduction, $.sourcemaps.write()))
     .pipe(gulp.dest('assets/javascript'))
@@ -184,7 +193,7 @@ gulp.task('package', ['build'], function() {
 
 // Build task
 // Runs copy then runs sass & javascript in parallel
-gulp.task('build', function(done) {
+gulp.task('build', ['clean'], function(done) {
   sequence('copy',
           ['sass', 'javascript', 'lint'],
           done);
@@ -192,7 +201,7 @@ gulp.task('build', function(done) {
 
 // PHP Code Sniffer task
 gulp.task('phpcs', function() {
-  return gulp.src(['*.php'])
+  return gulp.src(PATHS.phpcs)
     .pipe($.phpcs({
       bin: 'wpcs/vendor/bin/phpcs',
       standard: './codesniffer.ruleset.xml',
@@ -203,7 +212,7 @@ gulp.task('phpcs', function() {
 
 // PHP Code Beautifier task
 gulp.task('phpcbf', function () {
-  return gulp.src(['*.php'])
+  return gulp.src(PATHS.phpcs)
   .pipe($.phpcbf({
     bin: 'wpcs/vendor/bin/phpcbf',
     standard: './codesniffer.ruleset.xml',
@@ -211,6 +220,27 @@ gulp.task('phpcbf', function () {
   }))
   .on('error', $.util.log)
   .pipe(gulp.dest('.'));
+});
+
+// Clean task
+gulp.task('clean', function(done) {
+  sequence(['clean:javascript', 'clean:css'],
+            done);
+});
+
+// Clean JS
+gulp.task('clean:javascript', function() {
+  return del([
+      'assets/javascript/foundation.js'
+    ]);
+});
+
+// Clean CSS
+gulp.task('clean:css', function() {
+  return del([
+      'assets/stylesheets/foundation.css',
+      'assets/stylesheets/foundation.css.map'
+    ]);
 });
 
 // Default gulp task
@@ -223,13 +253,13 @@ gulp.task('default', ['build', 'browser-sync'], function() {
   }
 
   // Sass Watch
-  gulp.watch(['assets/scss/**/*.scss'], ['sass'])
+  gulp.watch(['assets/scss/**/*.scss'], ['clean:css', 'sass'])
     .on('change', function(event) {
       logFileChange(event);
     });
 
   // JS Watch
-  gulp.watch(['assets/javascript/custom/**/*.js'], ['javascript', 'lint'])
+  gulp.watch(['assets/javascript/custom/**/*.js'], ['clean:javascript', 'javascript', 'lint'])
     .on('change', function(event) {
       logFileChange(event);
     });
