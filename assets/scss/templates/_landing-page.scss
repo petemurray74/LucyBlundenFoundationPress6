@@ -1,0 +1,44 @@
+
+// Landing Pages
+.lp-row {
+	@include grid-row();
+
+	.lp-1col {
+
+		@include breakpoint(small) {
+			@include grid-column(12);
+		}
+
+		@include breakpoint(medium) {
+			@include grid-column(10);
+			@include grid-column-position(center);
+		}
+	}
+	.lp-3col {
+
+		@include breakpoint(small) {
+			@include grid-column(12);
+		}
+
+		@include breakpoint(medium) {
+			@include grid-column(4);
+		}
+	}	
+}
+
+.lp-row-wrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.lp-row-wrapper:nth-child(even) {
+background:#eee;
+color:$lucygreen;
+}
+
+.lp-row-wrapper:nth-child(odd) {
+background:$lucyyellow;
+color:#333;
+}
+
+
