@@ -4,11 +4,13 @@ Template Name: Front Page
 */
 get_header(); ?>
 
-<header id="front-hero" role="banner">
+<header id="hero" role="banner">
 	<div class="marketing">
 		<div class="tagline">
-			<h1><?php bloginfo( 'name' ); ?></h1>
-			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
+			<div class="taglinecontent">
+				<h2><?php bloginfo( 'name' ); ?></h2>
+				<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
+			</div>
 		</div>
 
 	</div>

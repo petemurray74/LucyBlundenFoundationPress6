@@ -1,0 +1,64 @@
+// Page header
+#hero {
+	.marketing {
+		@include grid-row();
+		//max-width: 55rem;
+	}
+
+	@include breakpoint(small) {
+		background: #fff url('../../../../uploads/site-template/hero-image.jpg') bottom center;
+		background-size: cover;
+		background-position: bottom;
+		padding: rem-calc(65%) 0;
+		margin: 0 0 rem-calc(36);
+		height: auto;
+		position: relative;
+		text-align: left;
+	}
+
+	@include breakpoint(medium) {
+		background: #fff url('../../../../uploads/site-template/hero-image.jpg') bottom center;
+		background-size: cover;
+		background-position: center;
+		height: rem-calc(350);
+		margin: 0 0 rem-calc(72);
+	}
+
+
+	.tagline {
+		background:$lucyyellow;
+		@include breakpoint(small) {
+			@include grid-column(7);
+		}
+
+		@include breakpoint(medium) {
+			@include grid-column(4);
+		}
+
+	}
+	
+	.taglinecontent{
+		padding: 0.9rem 0.3rem;
+	}
+
+	h2 {
+		color: $lucygreen;
+		font-weight: 300;
+		@include breakpoint(small) {
+			font-size: 2.4rem;
+		}
+
+		@include breakpoint(medium) {
+			font-size: 2.7rem;
+		}
+
+	}
+
+	h4 {
+		color: #444;
+		font-weight: 300;
+		font-size: 1.4rem;
+	}
+
+
+}

@@ -14,6 +14,17 @@
 
  <?php get_template_part( 'template-parts/featured-image' ); ?>
 
+ <header id="hero" role="banner">
+	<div class="marketing">
+		<div class="tagline">
+			<div class="taglinecontent">
+				<h2><?php bloginfo( 'name' ); ?></h2>
+				<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
+			</div>
+		</div>
+	</div>
+</header>
+ 
  <div id="page" role="main">
 
  <?php do_action( 'foundationpress_before_content' ); ?>
