@@ -44,6 +44,8 @@
 
 // 1. Global
 // ---------
+$lucygreen:#3FA156;
+$lucyyellow:#FCF437;
 
 $global-font-size: 100%;
 $global-width: rem-calc(1000);
@@ -60,7 +62,7 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: #FFFCF3;
+$body-background: #FFFFFF;
 $body-font-color: #444444;
 $body-font-family: 'Lato', Arial, sans-serif;
 $body-antialiased: true;
@@ -380,7 +382,7 @@ $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
-$menu-item-background-active: #121212;
+$menu-item-background-active: lighten( $lucygreen, 10% );
 $menu-icon-spacing: 0.25rem;
 
 // 23. Meter
@@ -535,7 +537,7 @@ $thumbnail-radius: $global-radius;
 // 34. Title Bar
 // -------------
 
-$titlebar-background: $black;
+$titlebar-background: $lucygreen;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
@@ -558,7 +560,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0;
-$topbar-background: #121212;
+$topbar-background: $lucygreen;
 $topbar-submenu-background: $topbar-background;
 $topbar-link-color: #fff;
 $topbar-input-width: 200px;
