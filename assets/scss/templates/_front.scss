@@ -5,6 +5,8 @@
 
 	.fp-intro {
 
+		padding: 3rem 0;
+	
 		@include breakpoint(small) {
 			@include grid-column(12);
 		}
