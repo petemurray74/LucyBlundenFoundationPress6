@@ -26,4 +26,5 @@
 /node_modules     export-ignore
 /.sass-cache     export-ignore
 /assets/sass     export-ignore
+/assets/components     export-ignore
 *.scss    export-ignore
